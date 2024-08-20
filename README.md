@@ -25,7 +25,6 @@ To open a shell of the type:
 
 it would be necessary to open the `SSH` and `FTP` ports on the physical machine, but this was not done. Conversely, it is not necessary to open ports to establish a connection via `Netcat`.
 
-
 When a remote shell is opened, it is possible to navigate through the target's directories. The directories of the 3 devices are as follows:
 
 * Physical machine 1
@@ -39,3 +38,7 @@ When a remote shell is opened, it is possible to navigate through the target's d
 * Virtual machine (it only has one directory called `vulnerable`)
 
 <img src="VM.png" width="650">
+
+There are two kind of remote shells:
+* Bind shell have the listener running on the target (we used that via `SSH` and `FTP`)
+* Reverse shell have the listener running on the user (we used that via `Netcat`)
